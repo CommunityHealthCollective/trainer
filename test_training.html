@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">CHC Trainer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Select Training
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="test_training.html">Test1</a>
+                            <a class="dropdown-item" href="test_training.html">Test2</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row justify-content-md-center" id="presentation-title">
+                The Amazing Test Training!
+            </div>
+            <div class="row" id="slides">
+                <iframe
+                    src="https://docs.google.com/presentation/d/e/2PACX-1vTeVDmo9mOiYf5yUAZPqpqbbCdNqQS69aY-BsXU72-pNRtA5J1yJ7Exl4rRaF7YtPuZvWXzIzrMRLuC/embed?start=false&loop=false&delayms=60000"
+                    frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true"
+                    webkitallowfullscreen="true"></iframe>
+            </div>
+            <div class="row" id="quiz">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSd9IXR8SdV8_MH8grwDMaiexOrpOI0C5RZF6RHRvE12OTuQSA/viewform?embedded=true"
+                    width="960" height="569" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
+            <div class="row justify-content-md-center" id="slide-togglr-row">
+                <button class="btn btn-primary slide-toggle-button" onclick="takeQuiz()" id="take-quiz-btn">Take
+                    Quiz</button>
+                <button class="btn btn-primary slide-toggle-button" onclick="showSlides()" id="show-slides-btn">Show
+                    Slides</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
